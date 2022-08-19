@@ -14,6 +14,9 @@ function convert(){
         grade = 'D';
     }else if (numeric >= 0 && numeric <= 49){
         grade = 'E';
+    }else{
+        grade = 'Invalid';
+        gradeDisplay.innerText = 'Nilai tidak valid';
     }
     gradeDisplay.innerText = `Nilai Anda adalah ${grade}`;
 }
